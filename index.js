@@ -10,4 +10,4 @@ app.use("/api/v1", meetingRoute);
 
 const PORT = 5000;
 connectDb();
-app.listen(PORT, console.log(`Listening on PORT ${PORT}`));
+app.listen(process.env.PORT || PORT, console.log(`Listening on PORT ${PORT}`));
