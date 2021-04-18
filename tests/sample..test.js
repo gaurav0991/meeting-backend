@@ -6,7 +6,7 @@ describe("Sample Test", () => {
   });
 });
 describe("GET / ", () => {
-  test("It should respond with an array of students", async () => {
+  test("It should respond with an array of meetings", async () => {
     const response = await request(app).get("/api/v1/meetings");
     expect(response.statusCode).toBe(200);
   });
