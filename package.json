@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "A backend for meeting app using node js and express",
   "main": "index.js",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest"
+
   },
   "author": "Gaurav",
   "license": "MIT",
@@ -12,5 +20,10 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.12.4"
+
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
   }
 }
